@@ -1,0 +1,71 @@
+.wrapper {
+  width: 810px;
+  display: flex;
+  flex-direction: column;
+  resize: horizontal;
+  border: 5px solid lightgray;
+}
+
+.wrapper_canvas {
+  width: 810px;
+  height: 80vh;
+}
+
+.toolbox {
+  background-color: rgb(244, 244, 244);
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#shapes-wrapper {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+#shapes-wrapper:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.toolbox > svg {
+  transition: 200ms ease-in-out;
+}
+
+.toolbox > svg:hover {
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+.active-toolbar-button {
+  background-color: rgb(233, 233, 233);
+}
+
+#textMode {
+  cursor: pointer;
+}
+
+#textColor {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#clearButton {
+  background: none;
+  border: none;
+  color: black;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  cursor: pointer !important;
+  border-radius: 0.5rem;
+
+  transition: 0.2s ease-in-out color;
+}
+
+#clearButton:hover {
+  color: gray;
+}

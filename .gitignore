@@ -1,0 +1,4 @@
+api/chat_service.py
+api/api.js
+api/node_modules/**/*
+api/*.jpg
