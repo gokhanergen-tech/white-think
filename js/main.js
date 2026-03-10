@@ -31,10 +31,9 @@ if (canvas.getContext) {
 
     const blob = new Blob([uint8Array], { type: "image/jpeg" });
 
-    // FormData oluştur
     const formData = new FormData();
 
-    formData.append("file", blob); // Base64 verisini "image" adlı form verisi olarak ekleyin
+    formData.append("file", blob);
     formData.append("question", document.getElementById("prompt").value);
 
     fetch("http://localhost:8085/img2img", {
@@ -45,6 +44,7 @@ if (canvas.getContext) {
       .then((data) => {
         const base64Image = data.response;
         const img = new Image();
+        print(base64Image);
         img.src = base64Image;
 
         img.onload = function () {

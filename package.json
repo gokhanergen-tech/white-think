@@ -1,0 +1,13 @@
+{
+  "name": "white-board",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "serve -s .",
+    "server": "node api/api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}

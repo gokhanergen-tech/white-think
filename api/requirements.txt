@@ -1,0 +1,14 @@
+
+diffusers==0.21.4
+transformers==4.30.2
+huggingface_hub==0.19.4
+
+torch
+accelerate
+safetensors
+xformers
+
+Pillow==9.5.0
+invisible-watermark
+fastapi
+python-multipart
